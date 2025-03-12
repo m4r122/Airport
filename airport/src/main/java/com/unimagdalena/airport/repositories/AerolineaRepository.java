@@ -10,7 +10,7 @@ import java.util.Optional;
 
 @Repository
 public interface AerolineaRepository extends JpaRepository<Aerolinea, Long> {
-    Optional<Aerolinea> findByNombre(String nombre);
+    Aerolinea findByNombre(String nombre);
 
     List<Aerolinea> findByNombreContainingIgnoreCase(String keyword);
 

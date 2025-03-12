@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import java.util.Set;
 
+
 @Getter
 @Setter
 @Entity
@@ -31,4 +32,5 @@ public class Aerolinea {
             joinColumns = @JoinColumn(name = "aerolineas_id", nullable = false, referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "vuelos_id", nullable = true, referencedColumnName = "id"))
     private Set<Vuelo> vuelos;
+
 }
