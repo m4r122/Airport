@@ -19,7 +19,6 @@ import java.util.Set;
 import java.util.UUID;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.InstanceOfAssertFactories.LIST;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -31,7 +30,7 @@ public class AerolineaRepositoryTest {
 
     @Container
     private static final PostgreSQLContainer<?> postgreSQLContainer =
-            new PostgreSQLContainer<>("postgres:17")
+            new PostgreSQLContainer<>("postgres:16")
                     .withDatabaseName("testdb")
                     .withUsername("testuser")
                     .withPassword("testpass");
