@@ -242,7 +242,7 @@ class ReservaServiceTest {
         assertEquals(101L, resultado.get(0).getId());
         assertEquals(100L, resultado.get(1).getId());
         assertEquals(102L, resultado.get(2).getId());
-        
+
         verify(reservaRepository, times(1)).findByPasajeroId(pasajero2.getId());
 
     }
