@@ -9,16 +9,13 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
-import static org.postgresql.hostchooser.HostRequirement.any;
 
 class PasajeroServiceTest {
     @Mock
@@ -26,7 +23,7 @@ class PasajeroServiceTest {
 
 
     @InjectMocks
-    private PasajeroService pasajeroService;
+    private PasajeroServiceImpl pasajeroService;
 
 
     public PasajeroServiceTest() {

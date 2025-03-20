@@ -24,7 +24,7 @@ class ReservaServiceTest {
     private ReservaRepository reservaRepository;
 
     @InjectMocks
-    private ReservaService reservaService;
+    private ReservaServiceImpl reservaService;
 
     public ReservaServiceTest (){
         MockitoAnnotations.openMocks(this);

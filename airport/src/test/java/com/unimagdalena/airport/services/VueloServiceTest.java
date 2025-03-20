@@ -23,7 +23,7 @@ class VueloServiceTest {
     private VueloRepository vueloRepository;
 
     @InjectMocks
-    private VueloService vueloService;
+    private VueloServiceImpl vueloService;
 
     public VueloServiceTest() {
         MockitoAnnotations.openMocks(this);

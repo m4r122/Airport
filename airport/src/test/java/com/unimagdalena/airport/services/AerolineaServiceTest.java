@@ -20,7 +20,7 @@ class AerolineaServiceTest {
     private AerolineaRepository aerolineaRepository;
 
     @InjectMocks
-    private AerolineaService aerolineaService;
+    private AerolineaServiceImpl aerolineaService;
 
     public AerolineaServiceTest() {
         MockitoAnnotations.openMocks(this);
