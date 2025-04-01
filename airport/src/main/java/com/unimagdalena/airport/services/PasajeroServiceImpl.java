@@ -22,6 +22,7 @@ public class PasajeroServiceImpl implements PasajeroService {
 
 
     public Pasajero createPasajero(Pasajero pasajero) {
+
         return pasajeroRepository.save(pasajero);
     }
 
