@@ -32,6 +32,4 @@ public class Vuelo {
 
     @OneToMany(mappedBy = "vuelo")
     private Set<Reserva> reservas;
-
-
 }

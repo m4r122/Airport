@@ -11,5 +11,6 @@ import lombok.Setter;
 @NoArgsConstructor
 public class PasaporteDTO {
     private long id;
-    
+    private String numero;
+    private long pasajeroId;
 }
